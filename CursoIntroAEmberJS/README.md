@@ -103,3 +103,17 @@ https://github.com/PiraSoftware/education/commit/c0862832ca6a4945d65be1c23a2de35
 Editar mis-apps/MiApp/app/styles/app.css
 
 https://github.com/PiraSoftware/education/commit/093a2e6c0082adc71b553d225740cdee6909bb34
+
+# Actualizando el modelo de datos mediante acciones
+
+Editar mis-apps/MiApp/app/services/programadores.js (agregar método al servicio)
+
+Editar mis-apps/MiApp/app/controllers/programadores.js (agregar acción conectada el servicio)
+
+Editar mis-apps/MiApp/app/templates/programadores.hbs (mapear la acción al componente)
+
+Editar mis-apps/MiApp/app/components/lista.js (crear acción que llama a la acción mapeada)
+
+Editar mis-apps/MiApp/app/templates/components/lista.hbs (conectar la acción del componente)
+
+https://github.com/PiraSoftware/education/commit/3b6a5f7d3c51d99562021ac5f7b8931d9411b2e3
