@@ -32,3 +32,11 @@ mis-apps/MiApp> ember serve
 
 Livereload server on http://localhost:7020
 	Serving on http://localhost:4200/
+
+# Agregar un route
+
+mis-apps/MiApp> ember generate route programadores
+
+Editar mis-apps/MiApp/app/templates/programadores.hbs
+
+ir a http://localhost:4200/programadores
