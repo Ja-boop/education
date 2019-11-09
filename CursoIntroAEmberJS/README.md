@@ -120,6 +120,8 @@ https://github.com/PiraSoftware/education/commit/3b6a5f7d3c51d99562021ac5f7b8931
 
 # Crear un falso backend de prueba y conectar el modelo
 
+https://github.com/PiraSoftware/education/commit/3a6462fc9cc068a0470c167fced6b3d871ba5281
+
 ## generar mock del backend para programadores
 
 mis-apps/MiApp> ember generate http-mock programadors
@@ -141,6 +143,7 @@ Editar mis-apps/MiApp/app/model/programador.js
 
 ## interactuar con los datos usando el controlador
 
+Editar mis-apps/MiApp/app/routes/programadores.js
 Editar mis-apps/MiApp/app/controllers/programadores.js
 
 ## arrancar el backend
