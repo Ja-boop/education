@@ -1,9 +1,5 @@
 <h2>Lista de programadores</h2>
 
-<ul>
- {{#each this.model as |programador|}}
-   <li>{{programador.nombre}}</li>
- {{/each}}
-</ul>
+<Lista @titulo="Lista de programadores" @items={{this.model}} />
 
 {{outlet}}

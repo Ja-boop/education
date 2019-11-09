@@ -44,3 +44,11 @@ ir a http://localhost:4200/programadores
 # Agregar modelo de datos al route
 
 Editar mis-apps/MiApp/app/routes/programadores.js
+Editar mis-apps/MiApp/app/templates/programadores.hbs
+
+# Generar un componente
+
+mis-apps/MiApp> ember generate component lista
+
+Editar mis-apps/MiApp/app/templates/components/lista.hbs
+Editar mis-apps/MiApp/app/templates/programadores.hbs
