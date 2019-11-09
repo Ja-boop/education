@@ -117,3 +117,34 @@ Editar mis-apps/MiApp/app/components/lista.js (crear acción que llama a la acci
 Editar mis-apps/MiApp/app/templates/components/lista.hbs (conectar la acción del componente)
 
 https://github.com/PiraSoftware/education/commit/3b6a5f7d3c51d99562021ac5f7b8931d9411b2e3
+
+# Crear un falso backend de prueba y conectar el modelo
+
+## generar mock del backend para programadores
+
+mis-apps/MiApp> ember generate http-mock programadors
+mis-apps/MiApp> npm install --save-dev body-parser
+
+Editar mis-apps/MiApp/server/mocks/programadors.js
+
+## conectar al backend
+
+mis-apps/MiApp> ember g adapter application
+
+Editar mis-apps/MiApp/app/adapters/application.js
+
+## crear el modelo de datos para programadores
+
+mis-apps/MiApp> ember g model programador
+
+Editar mis-apps/MiApp/app/model/programador.js
+
+## interactuar con los datos usando el controlador
+
+Editar mis-apps/MiApp/app/controllers/programadores.js
+
+## arrancar el backend
+
+El backend arranca automaticamente cuando se arranca servidor de ember con:
+
+mis-apps/MiApp> ember serve

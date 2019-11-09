@@ -6,6 +6,6 @@ export default Route.extend({
 	programadoresService: service('programadores'),
 
 	model() {
-		return this.programadoresService.todos();
+		return this.store.findAll('programador');
   }
 });

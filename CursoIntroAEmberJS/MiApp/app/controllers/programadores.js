@@ -1,28 +1,38 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
-import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-
   queryParams: ['pais'],
-  programadoresService: service('programadores'),
 
-  programadores: computed('pais', 'model',
-    function() {
-      let pais = this.pais;
-    	let programadores = this.model;
-      console.log(pais);
-      if (pais) {
-        return programadores.filterBy('pais', pais);
-      } else {
-        return programadores;
-      }
+  programadores: computed('pais', 'model', function() {
+    if (this.pais) {
+      return this.model.filterBy('pais', this.pais);
+    } else {
+      return this.model;
     }
-  ),
+  }),
 
   actions: {
     registrarVisita(programador) {
-        this.programadoresService.resitrarVisita(programador);
+      this.store.findRecord('programador', programador.id).then(function(p) {
+        p.incrementProperty('visitas');
+        p.save();
+      });
+    },
+    borrarProgramador(programador) {
+      this.store.findRecord('programador', programador.id).then(function(p) {
+        p.deleteRecord();
+        p.save();
+      }).catch(function (error) {
+        alert('No se puedo borrar: ' + error.message);
+      });
+    },
+    agregarProgramador(programador) {
+      let nuevo = this.store.createRecord('programador', {
+        nombre: programador.nombre,
+        pais: programador.pais
+      });
+      nuevo.save();
     }
   }
 });
