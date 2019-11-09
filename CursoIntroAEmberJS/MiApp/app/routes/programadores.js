@@ -1,10 +1,11 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
+
 export default Route.extend({
+
+	programadoresService: service('programadores'),
+
 	model() {
-   		return [
-			{nombre:'Maria Laura',pais:'Argentina'},
-			{nombre:'Martin Cabral',pais:'Paraguay'},
-			{nombre:'Julian Assange',pais:'Australia'}
-		];
- 	}
+		return this.programadoresService.todos();
+  }
 });

@@ -89,3 +89,9 @@ Editar mis-apps/MiApp/app/templates/programadores.hbs
 ir a http://localhost:4200/programadores?pais=Argentina
 
 https://github.com/PiraSoftware/education/commit/55cde54b4c642a6aef59395a3c4be9b13f00d9a1
+
+# Agregar un servicio
+
+mis-apps/MiApp> ember generate service programadores
+
+Editar mis-apps/MiApp/app/services/programadores.js
