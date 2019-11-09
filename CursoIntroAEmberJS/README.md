@@ -101,3 +101,5 @@ https://github.com/PiraSoftware/education/commit/c0862832ca6a4945d65be1c23a2de35
 # Agregar estilos CSS a la aplicacion
 
 Editar mis-apps/MiApp/app/styles/app.css
+
+https://github.com/PiraSoftware/education/commit/093a2e6c0082adc71b553d225740cdee6909bb34
