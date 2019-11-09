@@ -1,0 +1,9 @@
+<h2>{{this.titulo}}</h2>
+
+<ul>
+  {{#each this.items as |item|}}
+    <li role="button" {{action "click" item}}>{{item.nombre}} ({{item.visitas}})</li>
+  {{/each}}
+</ul>
+
+{{yield}}
