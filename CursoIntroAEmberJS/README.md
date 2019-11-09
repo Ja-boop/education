@@ -97,3 +97,7 @@ mis-apps/MiApp> ember generate service programadores
 Editar mis-apps/MiApp/app/services/programadores.js
 
 https://github.com/PiraSoftware/education/commit/c0862832ca6a4945d65be1c23a2de354295bdb1e
+
+# Agregar estilos CSS a la aplicacion
+
+Editar mis-apps/MiApp/app/styles/app.css
