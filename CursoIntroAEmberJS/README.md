@@ -57,3 +57,8 @@ Editar mis-apps/MiApp/app/templates/programadores.hbs
 
 Editar mis-apps/MiApp/app/templates/components/lista.hbs
 Editar mis-apps/MiApp/app/templates/programadores.hbs
+
+# Agregar acciones a un componente
+
+Editar mis-apps/MiApp/app/components/lista.js
+Editar mis-apps/MiApp/app/templates/components/lista.hbs

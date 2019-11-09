@@ -2,7 +2,7 @@
 
 <ul>
   {{#each this.items as |item|}}
-    <li>{{item.nombre}}</li>
+    <li {{action "mostrarNombre" item}}>{{item.nombre}}</li>
   {{/each}}
 </ul>
 
