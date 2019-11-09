@@ -25,7 +25,10 @@ consola> sudo npm install -g ember-cli
 # Crear una aplicacion EmberJS
 
 mis-apps> ember new MiApp
+
 mis-apps> cd MiApp
+
 mis-apps/MiApp> ember serve
+
 Livereload server on http://localhost:7020
 	Serving on http://localhost:4200/
