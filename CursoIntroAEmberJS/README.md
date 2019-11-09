@@ -46,9 +46,14 @@ ir a http://localhost:4200/programadores
 Editar mis-apps/MiApp/app/routes/programadores.js
 Editar mis-apps/MiApp/app/templates/programadores.hbs
 
-# Generar un componente
+# Agregar un componente
 
 mis-apps/MiApp> ember generate component lista
+
+Editar mis-apps/MiApp/app/templates/components/lista.hbs
+Editar mis-apps/MiApp/app/templates/programadores.hbs
+
+# Agregar cuerpo a un componente
 
 Editar mis-apps/MiApp/app/templates/components/lista.hbs
 Editar mis-apps/MiApp/app/templates/programadores.hbs
