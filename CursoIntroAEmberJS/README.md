@@ -95,3 +95,5 @@ https://github.com/PiraSoftware/education/commit/55cde54b4c642a6aef59395a3c4be9b
 mis-apps/MiApp> ember generate service programadores
 
 Editar mis-apps/MiApp/app/services/programadores.js
+
+https://github.com/PiraSoftware/education/commit/c0862832ca6a4945d65be1c23a2de354295bdb1e
