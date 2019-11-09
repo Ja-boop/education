@@ -62,3 +62,10 @@ Editar mis-apps/MiApp/app/templates/programadores.hbs
 
 Editar mis-apps/MiApp/app/components/lista.js
 Editar mis-apps/MiApp/app/templates/components/lista.hbs
+
+# Agregar controladores
+
+mis-apps/MiApp> ember generate controller programadores
+
+Editar mis-apps/MiApp/app/controllers/programadores.js
+Editar mis-apps/MiApp/app/templates/programadores.hbs
