@@ -40,3 +40,7 @@ mis-apps/MiApp> ember generate route programadores
 Editar mis-apps/MiApp/app/templates/programadores.hbs
 
 ir a http://localhost:4200/programadores
+
+# Agregar modelo de datos al route
+
+Editar mis-apps/MiApp/app/routes/programadores.js
