@@ -2,7 +2,7 @@
 
 <ul>
   {{#each this.items as |item|}}
-    <li {{action "mostrarNombre" item}}>{{item.nombre}}</li>
+    <li role="button" {{action "click" item}}>{{item.nombre}} ({{item.visitas}})</li>
   {{/each}}
 </ul>
 

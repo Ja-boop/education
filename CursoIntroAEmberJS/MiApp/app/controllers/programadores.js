@@ -1,10 +1,11 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
 
   queryParams: ['pais'],
-  nombre: null,
+  programadoresService: service('programadores'),
 
   programadores: computed('pais', 'model',
     function() {
@@ -17,5 +18,11 @@ export default Controller.extend({
         return programadores;
       }
     }
-  )
+  ),
+
+  actions: {
+    registrarVisita(programador) {
+        this.programadoresService.resitrarVisita(programador);
+    }
+  }
 });

@@ -1,4 +1,8 @@
-<Lista @titulo="Lista de programadores" @items={{this.programadores}}>
+<Lista
+  @titulo="Lista de programadores"
+  @items={{this.programadores}}
+  @onClick={{action "registrarVisita"}}
+>
    <div>(Sujeta a cambios de último momento)</div>
 </Lista>
 {{outlet}}

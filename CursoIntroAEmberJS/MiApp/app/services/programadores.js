@@ -1,4 +1,5 @@
 import Service from '@ember/service';
+import { set } from '@ember/object';
 
 export default Service.extend({
 
@@ -11,14 +12,18 @@ export default Service.extend({
 
   cargar() {
     return [
-      { nombre:'Maria Laura', pais:'Argentina'},
-      { nombre:'Martin Cabral', pais:'Paraguay'},
-      { nombre:'Julian Assange', pais:'Australia'},
-      { nombre:'Marta Marin', pais:'España'}
+      { nombre:'Maria Laura', pais:'Argentina',visitas:0},
+      { nombre:'Martin Cabral', pais:'Paraguay',visitas:0},
+      { nombre:'Julian Assange', pais:'Australia',visitas:0},
+      { nombre:'Marta Marin', pais:'España',visitas:0}
     ];
   },
 
   todos() {
-	   return this.programadores;
+	  return this.programadores;
+  },
+
+  resitrarVisita(programador) {
+    set(programador, 'visitas', programador.visitas + 1);
   }
 });
