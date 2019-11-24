@@ -5,10 +5,12 @@ Bajar y correr .msi de https://nodejs.org/en/download/
 
 ## Ubuntu
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 ## Debian, como root
 curl -sL https://deb.nodesource.com/setup_12.x | bash -
+
 apt-get install -y nodejs
 
 ## otros
@@ -31,6 +33,7 @@ mis-apps> cd MiApp
 mis-apps/MiApp> ember serve
 
 Livereload server on http://localhost:7020
+
 	Serving on http://localhost:4200/
 
 # Modificar el template de la aplicacion
