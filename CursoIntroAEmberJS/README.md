@@ -28,7 +28,7 @@ consola> sudo npm install -g ember-cli
 
 mis-apps> ember new MiApp
 
-   Si les da error, prueben desintalas nodejs y npm y reinstalarlo siguiendo las indicaciones de arriba
+      Si les da error, prueben desintalas nodejs y npm y reinstalarlo siguiendo las indicaciones de arriba
 
 mis-apps> cd MiApp
 
