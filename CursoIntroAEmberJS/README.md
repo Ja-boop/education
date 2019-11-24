@@ -34,7 +34,7 @@ mis-apps/MiApp> ember serve
 
 Livereload server on http://localhost:7020
 
-	Serving on http://localhost:4200/
+   Serving on http://localhost:4200/
 
 # Modificar el template de la aplicacion
 
